@@ -38,4 +38,10 @@ export class CityWeatherComponent implements OnInit {
     event.stopPropagation();
   }
 
+    onChange(event){
+        this.name = event.target.value;
+        this.loadWeather();
+    }
+
+
 }

@@ -32,4 +32,5 @@ export class DetailsComponent implements OnInit {
       this.days = this.weatherService.getForecast();
   }
 
+
 }

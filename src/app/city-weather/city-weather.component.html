@@ -1,9 +1,11 @@
 <section routerLink="/detail/{{name}}" class="weather__card" >
 
   <span class="city-name__text">
-    <input placeholder="City name"   (click)="stop($event)" value="{{name}}">
+    <input placeholder="City name" (keyup)="onChange($event)"   (click)="stop($event)" value="{{name}}">
 
     </span>
+
+    <span>{{name}}</span>
     <div class="weather-icon__container">
     <!-- Add weather icon depending on condition -->
     <div [ngSwitch]="condition">
